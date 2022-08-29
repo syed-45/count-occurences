@@ -24,7 +24,7 @@ let letterInsensitive = letter.lower
  */
 
 function countOccurrences(input: string): object {
-  const outputObj: any = {}
+  const outputObj: Record<string, number> = {}
   for (let letter of input) {
     let letterInsensitive = letter.toLowerCase()
     if (Object.keys(outputObj).includes(letterInsensitive)) {
@@ -37,9 +37,4 @@ function countOccurrences(input: string): object {
 }
 
 export default countOccurrences;
-
-// let myObj: any = {}
-// myObj['a']=0; console.log(myObj);
-// myObj['a']+=1;  console.log(myObj);
-
 
